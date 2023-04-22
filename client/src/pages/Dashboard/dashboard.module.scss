@@ -1,0 +1,99 @@
+.dashboard {
+	&__main {
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+
+		grid-template-areas: "weather graph graph2" "miniCards miniCards miniCards" "cards cards cards";
+		grid-template-rows: auto;
+		max-width: 100vw;
+		max-height: 85vh;
+		overflow-x: hidden !important;
+		gap: 1rem;
+		padding: 0 1.5rem 0 0;
+
+		&__weather {
+			grid-area: weather;
+		}
+		&__graph {
+			grid-area: graph;
+		}
+
+		&__graph {
+			grid-area: graph2;
+		}
+		&__graph,
+		&__graph2,
+		&__weather {
+			padding: 1rem;
+			border-radius: 5px;
+			background-color: var(--clr-white);
+			height: 300px;
+			border: none;
+		}
+		&__miniCards {
+			grid-column: 1/4;
+		}
+
+		&__cards {
+			grid-area: cards;
+			display: grid;
+			grid-template-areas: "card card card";
+			grid-template-columns: 33% 33% 33%;
+			gap: 0.5rem;
+			button {
+				background-color: inherit;
+				border: none;
+			}
+		}
+	}
+
+	&__cardHeader {
+		border-radius: 5px 5px 0 0;
+	}
+
+	&__cardBody {
+		p {
+			display: flex;
+			align-items: center;
+		}
+		.bodyHeader {
+			margin: 0.5rem 0;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.cardBodyText {
+			font-weight: 500;
+			overflow: hidden;
+			white-space: nowrap;
+			display: inline-block;
+			text-overflow: ellipsis;
+			text-align: left;
+			width: 100%;
+			color: var(--clr-grey-300);
+			font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+		}
+	}
+	@media (max-width: 900px) {
+		grid-template-columns: 75px calc(100% - 75px);
+
+		&__main {
+			display: flex;
+			flex-direction: column;
+			max-width: 100vw;
+			max-height: 85vh;
+			padding-right: 2rem;
+			padding-right: 0.2rem;
+			&__cards {
+				display: flex;
+				flex-direction: column;
+			}
+			&__graph,
+			&__graph2,
+			&__weather {
+				height: auto;
+				padding-right: 1rem;
+			}
+		}
+	}
+}

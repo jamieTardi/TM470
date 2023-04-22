@@ -1,0 +1,95 @@
+.icon {
+	--size-xsmall: var(--icon-size-xsmall, 0.75rem);
+	--size-small: var(--icon-size-small, 1rem);
+	--size-small-medium: var(--icon-size-small-medium, 1.25rem);
+	--size-large: 1.5rem;
+	--size-x-large: 2rem;
+
+	--size-medium: var(--icon-size-medium, 1.5rem);
+	--disc-size-medium: var(--icon-disc-size-medium, 1.5rem);
+	--disc-size-large: var(--icon-disc-size-large, 2rem);
+
+	--size: var(--size-medium);
+	font-size: var(--text-small);
+	display: grid;
+	place-items: center;
+	width: var(--size);
+	height: var(--size);
+
+	img {
+		display: block;
+		margin: 0;
+		padding: 0;
+		width: var(--size);
+		height: var(--size);
+	}
+
+	&[data-size="small"] {
+		--size: var(--size-small);
+	}
+
+	&[data-size="small-medium"] {
+		--size: var(--size-small-medium);
+	}
+
+	&[data-size="xsmall"] {
+		--size: var(--size-xsmall);
+	}
+
+	&[data-size="large"] {
+		--size: var(--size-large);
+	}
+
+	&[data-size="x-large"] {
+		--size: var(--size-x-large);
+	}
+
+	&[data-variant*="disc"] {
+		border-radius: 50%;
+		width: var(--disc-size);
+		height: var(--disc-size);
+	}
+
+	&[data-variant="disc-medium"] {
+		--disc-size: var(--disc-size-medium);
+		background: var(--disc-colour, var(--clr-grey-700));
+	}
+
+	&[data-variant="disc-large"] {
+		--disc-size: var(--disc-size-large);
+		background: var(--disc-colour, var(--clr-grey-700));
+	}
+
+	&[data-colour] {
+		--svg-recolour: var(--svg-recolour-white);
+		img {
+			filter: var(--svg-recolour);
+			transition: filter 0.25s ease-in-out;
+		}
+
+		&[data-colour="white"] {
+			--svg-recolour: var(--svg-recolour-white);
+		}
+		&[data-colour="green"] {
+			--svg-recolour: var(--svg-recolour-green);
+		}
+		&[data-colour="yellow"] {
+			--svg-recolour: var(--svg-recolour-yellow);
+		}
+		&[data-colour="orange"] {
+			--svg-recolour: var(--svg-recolour-orange);
+		}
+		&[data-colour="red"] {
+			--svg-recolour: var(--svg-recolour-red);
+		}
+		&[data-colour="blue"] {
+			--svg-recolour: var(--svg-recolour-blue);
+		}
+		&[data-colour="black"] {
+			--svg-recolour: none;
+		}
+		&[data-colour="grey"] {
+			--svg-recolour: var(--col-grey-300);
+		}
+	}
+}

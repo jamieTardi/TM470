@@ -1,0 +1,10 @@
+.toast {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--clr-white);
+	max-width: 400px;
+	padding: 1rem;
+	gap: 1rem;
+	border-radius: 10px;
+}

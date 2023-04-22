@@ -1,0 +1,33 @@
+.customerDetails {
+	border-bottom: 1px solid var(--clr-grey-300);
+	padding-bottom: 0.5rem;
+	&__title {
+		padding-bottom: 0.5rem;
+		color: var(--clr-grey-500);
+	}
+	li {
+		padding: 0.5rem;
+		border-bottom: 1px solid var(--clr-grey-300);
+		&:hover {
+			background-color: var(--clr-blue);
+			color: var(--clr-white);
+			border-radius: 5px;
+			cursor: pointer;
+			span,
+			h6 {
+				color: var(--clr-white);
+			}
+		}
+	}
+
+	&__phone {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	&__top {
+		font-size: var(--font-size-s);
+		margin: 0.5rem 0;
+	}
+}

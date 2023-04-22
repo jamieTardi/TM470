@@ -1,0 +1,14 @@
+.card {
+	width: 100%;
+	[class*="card-container"] {
+		min-height: 300px;
+	}
+
+	&__cardHeader {
+		background-color: var(--clr-blue);
+		h3,
+		h4 {
+			color: var(--clr-white);
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.graph {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	span {
+		color: var(--clr-black);
+		font-weight: 600;
+	}
+	h2 {
+		color: var(--clr-black);
+	}
+	h4 {
+		margin-bottom: 1rem;
+		color: var(--clr-black);
+	}
+	&__graphContainer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		&__graph {
+			height: 200px;
+			width: 200px;
+		}
+		&__table {
+			border: 1px solid black;
+			padding: 0.5rem;
+			border-radius: 5px;
+
+			ul {
+				list-style: none;
+				li {
+					margin: 0.5rem 0;
+				}
+			}
+		}
+	}
+	@media (max-width: 900px) {
+		&__graphContainer {
+			flex-direction: column;
+			gap: 1rem;
+		}
+	}
+}

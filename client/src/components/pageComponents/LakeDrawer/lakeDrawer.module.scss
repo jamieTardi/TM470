@@ -1,0 +1,95 @@
+.drawer {
+	h2 {
+		color: var(--clr-black);
+	}
+	&__content {
+		h4 {
+			margin: 0 0 0.5rem 0;
+		}
+
+		&--form {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+
+			.checkboxWrapper {
+				display: flex;
+				justify-content: space-between;
+			}
+			&--title {
+				color: var(--clr-black);
+			}
+		}
+
+		&--form--group1,
+		&--form--group2 {
+			display: flex;
+			gap: 1rem;
+		}
+
+		&--form--group3 {
+			grid-area: checkbox;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+
+		&--form--group4 {
+			grid-area: checkbox2;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+
+		&--form--group5 {
+			grid-area: map;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+
+		&--location {
+			h4 {
+				margin: 1rem 0;
+			}
+			&--map {
+				height: 400px;
+			}
+			&--gps {
+				display: flex;
+				justify-content: space-between;
+				margin: 0.5rem 0;
+				font-size: var(--font-size-s);
+			}
+		}
+
+		@media (max-width: 900px) {
+			&--form {
+				.checkboxWrapper {
+					display: flex;
+					flex-direction: column;
+					gap: 1rem;
+					justify-content: space-between;
+				}
+				&--group1,
+				&--group2 {
+					display: flex;
+					flex-direction: column;
+					gap: 1rem;
+				}
+			}
+		}
+
+		[class*="input"] {
+			margin: 0.5rem 0;
+			width: 95%;
+		}
+	}
+	&__footer {
+		margin-top: 1rem;
+
+		&--deleteBtn {
+			margin-right: 1rem;
+		}
+	}
+}

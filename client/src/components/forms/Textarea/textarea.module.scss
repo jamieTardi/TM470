@@ -1,0 +1,16 @@
+.textarea {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-top: 0.5rem;
+
+	p {
+		font-size: var(--font-size-s);
+	}
+	&__text {
+		border: none;
+		border-radius: 5px;
+		font-family: inherit;
+		color: inherit;
+	}
+}

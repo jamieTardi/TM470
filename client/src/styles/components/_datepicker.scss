@@ -1,0 +1,153 @@
+.dateRangePicker {
+	display: none;
+}
+
+.react-calendar {
+	margin-bottom: 3rem;
+}
+
+.dateRangePicker.open {
+	display: grid;
+	place-items: center;
+	width: 100%;
+
+	.react-daterange-picker,
+	.react-date-picker {
+		height: 3rem;
+
+		&__wrapper {
+			background-color: var(--clr-blue);
+			border: none !important;
+			width: 350px;
+			padding: 0.5rem 0.2rem;
+			border-radius: 5px;
+		}
+
+		&__inputGroup {
+			font-size: 1.5rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&__input:invalid {
+				background-color: var(--clr-red);
+				border-radius: 5px;
+			}
+			&__divider {
+				color: var(--clr-white);
+			}
+		}
+
+		&__clear-button {
+			display: none;
+		}
+
+		&__inputGroup input {
+			color: var(--clr-white);
+			font-variant-numeric: tabular-nums;
+		}
+	}
+
+	.react-daterange-picker__inputGroup__leadingZero,
+	.react-daterange-picker__range-divider {
+		color: var(--clr-white);
+	}
+
+	.react-daterange-picker__calendar--open,
+	.react-datetime-picker__calendar--open {
+		top: 100% !important;
+		bottom: unset !important;
+		color: var(--clr-black);
+	}
+
+	.react-daterange-picker__calendar,
+	.react-datetime-picker__calendar {
+		.react-calendar {
+			padding: 0.5rem;
+			background-color: var(--clr-white);
+			border: none;
+			&__navigation {
+				background-color: var(--clr-white);
+
+				&__arrow {
+					border-left: none;
+					font-size: 3rem;
+					display: grid;
+					place-content: center;
+					color: var(--clr-grey-400);
+					font-weight: 300;
+					padding-bottom: 0.5rem;
+					&:first-child {
+						border-left: none;
+					}
+				}
+				&__label {
+					color: var(--clr-grey-400);
+					font-size: 1.2rem;
+				}
+				&__prev-button {
+					border-right: none;
+				}
+			}
+
+			&__tile {
+				background-color: var(--clr-white);
+				border: none;
+				color: var(--clr-grey-400);
+				font-size: 1.2rem;
+				&:nth-child(7n) {
+					border-right: none;
+				}
+			}
+
+			&__tile:enabled:hover,
+			&__tile--active:enabled:hover,
+			&__tile--active:enabled:focus,
+			&__navigation button:enabled:hover,
+			&__tile--active,
+			&__navigation button:focus {
+				background-color: var(--clr-blue);
+				color: var(--clr-white);
+			}
+
+			&__tile:disabled {
+				background-color: var(--clr-red);
+				color: var(--clr-white);
+				cursor: not-allowed;
+			}
+
+			&__navigation button:disabled {
+				opacity: 0.5;
+				background-color: var(--col-grey-400);
+			}
+
+			&__tile--hover {
+				background-color: var(--clr-blue) !important;
+			}
+
+			&__month-view__weekdays__weekday {
+				background-color: var(--clr-white);
+				border-right: none;
+				&:last-child {
+					border-right: none;
+				}
+			}
+
+			&__month-view__days__day--neighboringMonth {
+				background-color: var(--col-grey-200);
+				color: var(--col-grey-300) !important;
+			}
+
+			&__decade-view__years__year,
+			&__year-view__months__month {
+				background-color: var(--col-grey-200);
+				font-size: 1.3rem;
+				padding: 1rem 0.2rem;
+				color: var(--col-grey-100);
+				&:nth-child(7) {
+					border-right: none;
+				}
+			}
+		}
+	}
+}

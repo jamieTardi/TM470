@@ -1,0 +1,40 @@
+.card {
+	width: 100%;
+	min-height: 250px;
+
+	&__cardHeader {
+		background-color: var(--clr-blue);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		h3 {
+			color: var(--clr-white);
+		}
+	}
+	&__content {
+		display: grid;
+		gap: 1rem;
+		span,
+		p {
+			font-size: var(--font-size-s);
+		}
+
+		.customerId {
+			margin-bottom: 1rem;
+		}
+		& > div {
+			overflow: hidden;
+			white-space: nowrap;
+			display: inline-block;
+			text-overflow: ellipsis;
+			text-align: left;
+			width: 100%;
+		}
+	}
+}
+
+.empty {
+	display: grid;
+	place-items: center;
+	width: 95vw;
+}

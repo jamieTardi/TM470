@@ -1,0 +1,22 @@
+.content {
+	display: grid;
+	grid-template-areas: "input1" "input2" "input3" "map";
+	&__input1,
+	&__input2 {
+		display: flex;
+		gap: 1rem;
+	}
+	@media (max-width: 900px) {
+		&__input1,
+		&__input2 {
+			flex-direction: column;
+			gap: 0rem;
+		}
+	}
+}
+
+.drawer__footer {
+	&--deleteBtn {
+		margin-right: 1rem;
+	}
+}

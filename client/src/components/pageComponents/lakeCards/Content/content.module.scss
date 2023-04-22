@@ -1,0 +1,28 @@
+.content {
+	&__icons {
+		display: grid;
+		grid-template-areas: "left right";
+		grid-template-columns: 50% 50%;
+		gap: 0.5rem;
+		&--icon {
+			display: flex;
+			gap: 0.5rem;
+		}
+	}
+	&__top {
+		display: grid;
+		gap: 0.5rem;
+		grid-template-areas: "left right";
+		grid-template-columns: 50% 50%;
+		place-items: start;
+		margin-bottom: 1rem;
+		& > div {
+			overflow: hidden;
+			white-space: nowrap;
+			display: inline-block;
+			text-overflow: ellipsis;
+			text-align: left;
+			width: 100%;
+		}
+	}
+}

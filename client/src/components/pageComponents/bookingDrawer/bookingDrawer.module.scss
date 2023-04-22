@@ -1,0 +1,17 @@
+.bookingDrawer {
+	max-height: 100%;
+	&__header {
+		&__pills {
+			margin: 0.75rem 0;
+		}
+		&__contact {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 0.5rem;
+		}
+	}
+	&__content {
+		height: 400px;
+		z-index: 200;
+	}
+}

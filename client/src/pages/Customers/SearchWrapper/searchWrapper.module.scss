@@ -1,0 +1,26 @@
+.searchWrapper {
+	width: 50%;
+	&__phone {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	ul {
+		z-index: 150;
+	}
+	li {
+		padding: 0.5rem;
+		border-bottom: 1px solid var(--clr-grey-300);
+		&:hover {
+			background-color: var(--clr-blue);
+			color: var(--clr-white);
+			border-radius: 5px;
+			cursor: pointer;
+			span,
+			h6 {
+				color: var(--clr-white);
+			}
+		}
+	}
+}

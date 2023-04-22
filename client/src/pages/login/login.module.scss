@@ -1,0 +1,56 @@
+.login {
+	display: grid;
+	grid-template-areas: "image login";
+	grid-template-columns: 33% 1fr;
+	max-height: 100vh;
+
+	&__image-container {
+		grid-area: image;
+		overflow: hidden;
+		height: 100vh;
+		img {
+			object-fit: cover;
+			height: 100%;
+		}
+	}
+	&__form {
+		grid-area: login;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		h1 {
+			font-size: var(--font-large);
+			margin-bottom: 1rem;
+		}
+	}
+	&__input {
+		margin-bottom: 1rem;
+		width: 50%;
+	}
+
+	&__error {
+		margin-top: 0.5rem;
+		color: var(--clr-type-error);
+	}
+
+	&__button {
+		margin-top: 1rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.login {
+		grid-template-areas: "image" "login";
+		min-height: 100vh;
+
+		&__image-container {
+			display: none;
+		}
+		&__form {
+			min-width: 100vw;
+			min-height: 100vh;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+export const defaultLakeState: TLake = {
+	_id: "",
+	name: "",
+	phone: "",
+	maxUsers: 0,
+	email: "",
+	ownerId: "",
+	depth: 0,
+	lakeRef: "",
+	specifics: {
+		allowsBBQ: false,
+		hasFood: false,
+		allowsDogs: false,
+		allowsFires: false,
+		allowsSwimParking: false,
+		allowsOwnBait: false,
+		hasWifi: false,
+		allowsIndividualBookings: false,
+		hasSlings: false,
+		hasMerchandise: false,
+		hasShowers: false,
+		toiletsProvided: false,
+		hasBaliff: false,
+	},
+	location: {
+		gps: [-0.032523555010669725, 51.49815716531924],
+	},
+};

@@ -1,0 +1,10 @@
+.content {
+	&__dates {
+		display: flex;
+		justify-content: space-between;
+		margin: 1rem 0;
+	}
+	p {
+		font-family: var(--font-type-notes);
+	}
+}

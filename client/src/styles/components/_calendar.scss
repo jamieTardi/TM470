@@ -1,0 +1,111 @@
+.month {
+	background-color: var(--clr-blue-lighter);
+	span,
+	button {
+		color: var(--clr-white) !important;
+	}
+	.react-calendar__month-view {
+		display: none;
+	}
+}
+
+.react-calendar {
+	border: none;
+
+	border-radius: 10px;
+	span,
+	button {
+		font-size: var(--font-size-l);
+		color: var(--clr-grey-300);
+	}
+	&__navigation {
+		margin-bottom: 0;
+	}
+
+	&__navigation button:enabled:hover {
+		background-color: var(--clr-blue-lightest);
+	}
+
+	&__navigation button:disabled,
+	&__tile:enabled:hover,
+	&__navigation button:enabled:focus {
+		background-color: var(--clr-blue-darker);
+	}
+	&__month-view__days__day {
+		border: 1px solid var(--clr-grey-500) !important;
+	}
+	.highlight-red {
+		color: var(--clr-white);
+		background-color: var(--clr-red);
+		position: relative;
+		&:hover {
+			&::before {
+				position: absolute;
+				background-color: var(--clr-grey-500);
+				top: 0;
+				left: 0;
+				z-index: 1000;
+				font-size: 0.55rem;
+				content: "Unavaliable";
+			}
+		}
+	}
+	.highlight-green {
+		color: var(--clr-white);
+		background-color: var(--clr-green);
+		position: relative;
+		&:hover {
+			&::before {
+				position: absolute;
+				background-color: var(--clr-grey-500);
+				top: 0;
+				left: 0;
+				z-index: 1000;
+				font-size: 0.7rem;
+				content: "Avaliable";
+			}
+		}
+	}
+	.highlight-yellow {
+		color: var(--clr-white);
+		background-color: var(--clr-yellow);
+		position: relative;
+		&:hover {
+			&::before {
+				position: absolute;
+				background-color: var(--clr-grey-500);
+				top: 0;
+				left: 0;
+				z-index: 1000;
+				font-size: 0.7rem;
+				content: "Partial avaliabilty";
+			}
+		}
+	}
+}
+
+//Overview by year calendar
+.react-calendar.year {
+	border-radius: 0px;
+	margin-bottom: 1rem;
+	width: 100%;
+	height: 100%;
+
+	.react-calendar__navigation {
+		&__arrow {
+			display: none;
+		}
+		&__label {
+			pointer-events: none;
+		}
+	}
+	.react-calendar__month-view__days__day--neighboringMonth {
+		background-color: var(--clr-white);
+		border: 0 !important;
+		&:hover {
+			&::before {
+				content: "";
+			}
+		}
+	}
+}

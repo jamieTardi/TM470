@@ -1,0 +1,7 @@
+.miniCardWrapper {
+	grid-area: miniCards;
+	display: grid;
+	grid-template-columns: repeat(4, 23%);
+	gap: 2rem;
+	height: 150px;
+}

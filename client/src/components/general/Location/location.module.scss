@@ -1,0 +1,27 @@
+.location {
+	h4 {
+		margin: 1rem 0;
+	}
+	&__map {
+		height: 400px;
+		border-radius: 5px;
+		position: relative;
+		&--btn {
+			position: absolute;
+			top: 125px;
+			right: 0.5rem;
+			z-index: 5;
+			background-color: var(--clr-white);
+			border: none;
+			border-radius: 5px;
+			padding: 0.25rem;
+			cursor: pointer;
+		}
+	}
+	&__gps {
+		display: flex;
+		justify-content: space-between;
+		margin: 0.5rem 0;
+		font-size: var(--font-size-s);
+	}
+}

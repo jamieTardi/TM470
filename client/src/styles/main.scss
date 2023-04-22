@@ -1,0 +1,71 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "scrollable.scss";
+@import "overlay.scss";
+@import "./components/datepicker.scss";
+@import "./components/calendar.scss";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#root {
+	font-family: "Poppins", sans-serif;
+	height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+	background-color: #dee1e7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p {
+	color: var(--col-grey-300);
+}
+
+a {
+	text-decoration: none;
+	color: var(--grey-300);
+}
+
+button {
+	cursor: pointer;
+}
+
+.app-container {
+	height: 100vh;
+	width: 100vw;
+}
+
+//global classes
+
+.bold {
+	font-weight: 600;
+	color: var(--clr-black);
+}
+
+.red-bold {
+	font-weight: 600;
+	color: var(--clr-red);
+}
+
+.green-bold {
+	font-weight: 600;
+	color: var(--clr-green);
+}
+
+.light-text {
+	color: var(--clr-white);
+}
+
+.no-border-background {
+	background-color: inherit;
+	border: none;
+}

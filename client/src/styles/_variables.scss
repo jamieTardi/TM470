@@ -1,0 +1,230 @@
+// Colours
+$col-white: #fafafa;
+$col-black: #0c1014;
+$col-brand: #e71d1d;
+$col-grey-900: #171a1d;
+$col-grey-800: #222426;
+$col-grey-700: #313234;
+$col-grey-600: #2d3136;
+$col-grey-500: #3c3f42;
+$col-grey-400: #535659;
+$col-grey-300: #6b6e70;
+$col-grey-200: #bec0c1;
+$col-grey-100: #fafafa;
+$colour-map: (
+	"accent": #8bada1,
+	"green": #7dbe31,
+	"yellow": #d9c03f,
+	"orange": #e59231,
+	"red": #e6543a,
+);
+$colour-states: (
+	"alert": "orange",
+	"warning": "yellow",
+	"success": "green",
+	"info": "accent",
+	"danger": "red",
+);
+:root {
+	--screen-width-large: 1320px;
+	--screen-width-medium: 900px;
+	--screen-width-small: 750px;
+	--screen-width-x-small: 500px;
+
+	--col-text-100: #fafafa;
+	--col-text-200: #dcdddd;
+	--col-text-300: #bfc0c1;
+	--col-text-400: #a3a5a6;
+	--col-text-500: #888a8c;
+	--col-text-600: #6d7072;
+	--col-text-700: #545759;
+	--col-text-800: #3c3f42;
+	--col-brand: #{$col-brand};
+	--col-white: #{$col-white};
+	--col-black: #{$col-black};
+	--col-super-black: #000;
+	--col-black-translucent: #{rgba($col-black, 0.9)};
+	--col-shadow: #{rgba($col-black, 0.5)};
+	--col-overlay: #{rgba($col-grey-800, 0.7)};
+	--col-white-highlight: #{rgba($col-white, 0.1)};
+	--col-accent: #8bada1;
+	--col-green: #7dbe31;
+	--col-yellow: #d9c03f;
+	--col-orange: #e59231;
+	--col-red: #e6543a;
+	--col-grey-900: #{$col-grey-900};
+	--col-grey-800: #{$col-grey-800};
+	--col-grey-700: #{$col-grey-700};
+	--col-grey-600: #{$col-grey-600};
+	--col-grey-500: #{$col-grey-500};
+	--col-grey-400: #{$col-grey-400};
+	--col-grey-300: #{$col-grey-300};
+	--col-grey-200: #{$col-grey-200};
+	--col-grey-100: #{$col-grey-100};
+	--col-grey-900-translucent: #{rgba($col-grey-900, 0.9)};
+	--col-grey-800-translucent: #{rgba($col-grey-800, 0.9)};
+	--col-grey-700-translucent: #{rgba($col-grey-700, 0.9)};
+	--col-grey-600-translucent: #{rgba($col-grey-600, 0.9)};
+	--col-grey-500-translucent: #{rgba($col-grey-500, 0.9)};
+	--col-grey-400-translucent: #{rgba($col-grey-400, 0.9)};
+	--col-grey-300-translucent: #{rgba($col-grey-300, 0.9)};
+	--col-grey-200-translucent: #{rgba($col-grey-200, 0.9)};
+	--col-grey-100-translucent: #{rgba($col-grey-100, 0.9)};
+	--svg-dot-white: url("data:image/svg+xml,%3Csvg viewBox='0 0 2 2' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23fff' /%3E%3C/svg%3E");
+	--svg-dot-black: url("data:image/svg+xml,%3Csvg viewBox='0 0 2 2' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23000' /%3E%3C/svg%3E");
+	--svg-rec-black: url("data:image/svg+xml,%3Csvg viewBox='0 0 1 1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='%23000' /%3E%3C/svg%3E");
+	--svg-rec-grey-900: url("data:image/svg+xml,%3Csvg viewBox='0 0 1 1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='%23171a1d' /%3E%3C/svg%3E");
+	--svg-rec-grey-800: url("data:image/svg+xml,%3Csvg viewBox='0 0 1 1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='%23222426' /%3E%3C/svg%3E");
+	--svg-rec-grey-700: url("data:image/svg+xml,%3Csvg viewBox='0 0 1 1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='%23313234' /%3E%3C/svg%3E");
+	--svg-rec-grey-600: url("data:image/svg+xml,%3Csvg viewBox='0 0 1 1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='%232d3136' /%3E%3C/svg%3E");
+	--svg-rec-grey-500: url("data:image/svg+xml,%3Csvg viewBox='0 0 1 1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='%233c3f42' /%3E%3C/svg%3E");
+	--svg-rec-grey-400: url("data:image/svg+xml,%3Csvg viewBox='0 0 1 1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='%23535659' /%3E%3C/svg%3E");
+	--svg-rec-grey-300: url("data:image/svg+xml,%3Csvg viewBox='0 0 1 1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='%236b6e70' /%3E%3C/svg%3E");
+	--svg-rec-grey-200: url("data:image/svg+xml,%3Csvg viewBox='0 0 1 1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='%23bec0c1' /%3E%3C/svg%3E");
+	--svg-rec-grey-100: url("data:image/svg+xml,%3Csvg viewBox='0 0 1 1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='%23fafafa' /%3E%3C/svg%3E");
+	--svg-rec-white: url("data:image/svg+xml,%3Csvg viewBox='0 0 1 1' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='%23fff' /%3E%3C/svg%3E");
+	--svg-fixed-rec-grey-300: url("data:image/svg+xml,%3Csvg viewBox='0 0 1 1' preserveAspectRatio='xMinYMin' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' fill='%236b6e70' /%3E%3C/svg%3E");
+	--font-family: "Rajdhani", "Droid Sans", "Oxygen", "Ubuntu", "Fira Sans", "Helvetica Neue", sans-serif;
+	--font-family-headings: "Rajdhani", "Droid Sans", "Oxygen", "Ubuntu", "Fira Sans", "Helvetica Neue", sans-serif;
+	--font-family-code: "Fira Code", monospace;
+	--text-largest: 1.5rem;
+	--text-large: 1.25rem;
+	--text-normal: 1rem;
+	--text-small: 0.85rem;
+	--text-smallest: 0.75rem;
+	--font-weight-boldest: 700;
+	--font-weight-bold: 600;
+	--font-weight-normal: 500;
+	--font-weight-thin: 400;
+	// New design system
+	--font-type-notes: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	--font-weight-medium: 500;
+	--font-weight-bold: 700;
+	--font-size-xs: calc(12 / 16 * 1rem);
+	--font-size-s: calc(14 / 16 * 1rem);
+	--font-size-m: 1rem;
+	--font-size-l: calc(20 / 16 * 1rem);
+	--font-size-xl: calc(24 / 16 * 1rem);
+	--font-size-2xl: calc(28 / 16 * 1rem);
+	--font-size-3xl: calc(32 / 16 * 1rem);
+	--font-size-4xl: calc(48 / 16 * 1rem);
+	--font-size-5xl: calc(64 / 16 * 1rem);
+	--font-size-6xl: calc(88 / 16 * 1rem);
+
+	--line-height-xs: 1;
+	--line-height-s: 1.25;
+	--line-height-m: 1.5;
+	--line-height-l: 1.6;
+
+	--letter-spacing-xs: -0.02rem;
+	--letter-spacing-s: -0.02rem;
+	--letter-spacing-m: -0.01rem;
+	--letter-spacing-none: 0rem;
+
+	--panel-padding-small: 1rem;
+	--panel-padding-medium: 1.5rem;
+	--panel-padding-large: 2rem;
+
+	--spacer-line: 1px solid var(--clr-grey-500);
+
+	--clr-text-100: #dcdddd;
+	--clr-text-200: #c1c2c2;
+	--clr-text-300: #9c9d9e;
+	--clr-text-400: #7e8183;
+	--clr-text-500: #616466;
+	--clr-text-600: #494c4e;
+	--clr-text-700: #333638;
+	--clr-text-800: #252729;
+	--clr-text-900: #1c1d1f;
+	--clr-grey-100: #bec0c1;
+	--clr-grey-200: #81868a;
+	--clr-grey-300: #5b6065;
+	--clr-grey-400: #3d4348;
+	--clr-grey-500: #2f3338;
+	--clr-grey-600: #26292d;
+	--clr-grey-700: #1d2024;
+	--clr-grey-800: #171a1d;
+	--clr-grey-900: #121517;
+	--clr-white: #fafafa;
+	--clr-black: #0c1014;
+	--clr-brand: #e71d1d;
+	--clr-blue: #3388ec;
+	--clr-blue-lighter: #519df4;
+	--clr-blue-lightest: #7eb6f6;
+	--clr-blue-darker: #006eec;
+
+	--clr-green: #7dbe31;
+	--clr-green-lighter: #b6f969;
+	--clr-yellow-lightest: #e3d06f;
+	--clr-yellow-lighter: #e3cd57;
+	--clr-yellow: #e6ca3f;
+	--clr-yellow-darker: #c8ae28;
+	--clr-yellow-darkest: #ae961c;
+	--clr-yellow-glow: #e6ca3f80;
+	--clr-yellow-glow2: #e6ca3f40;
+	--clr-orange-lightest: #ecad65;
+	--clr-orange-lighter: #eaa14d;
+	--clr-orange: #e59231;
+	--clr-orange-darker: #ca7a1d;
+	--clr-orange-darkest: #aa6514;
+	--clr-orange-glow: #e5923180;
+	--clr-orange-glow2: #e5923140;
+	--clr-red-lightest: #ec7f6b;
+	--clr-red-lighter: #ea6a53;
+	--clr-red: #e6543a;
+	--clr-red-darker: #c53b23;
+	--clr-red-darkest: #a42b15;
+	--clr-red-glow: #e6543a80;
+	--clr-red-glow2: #e6543a40;
+	--clr-highlight-lightest: #748496;
+	--clr-highlight-lighter: #59697a;
+	--clr-highlight: #414e5c;
+	--clr-highlight-darker: #333d48;
+	--clr-highlight-darkest: #2a323c;
+	--clr-highlight-glow: #414e5c80;
+	--clr-highlight-glow2: #414e5c40;
+	--clr-accent-lightest: #a4c1b7;
+	--clr-accent-lighter: #85aa9e;
+	--clr-accent: #688f82;
+	--clr-accent-darker: #55766a;
+	--clr-accent-darkest: #445f55;
+	--clr-accent-glow: #688f8280;
+	--clr-accent-glow2: #688f8240;
+	--clr-focus: #3388ec80;
+	--clr-severity-none: var(--clr-green);
+	--clr-severity-low: var(--clr-yellow);
+	--clr-severity-low-glow: var(--clr-yellow-glow2);
+	--clr-severity-medium: var(--clr-orange);
+	--clr-severity-medium-glow: var(--clr-orange-glow2);
+	--clr-severity-high: var(--clr-red);
+	--clr-severity-high-glow: var(--clr-red-glow2);
+	--clr-type-default: var(--clr-grey-600);
+	--clr-type-error: var(--clr-red);
+	--clr-type-warning: var(--clr-orange);
+	--clr-type-success: var(--clr-blue);
+
+	--clr-type-default-text-colour: var(--clr-white);
+	--clr-type-error-text-colour: var(--clr-white);
+	--clr-type-warning-text-colour: var(--clr-black);
+	--clr-type-success-text-colour: var(--clr-black);
+
+	--tooltip-text-color: var(--clr-white);
+	--tooltip-background-color: #7b7c80;
+	--tooltip-margin: 30px;
+	--tooltip-arrow-size: 6px;
+
+	--focus-shadow: 0 0 0 5px var(--clr-focus), 0 0 0 1px var(--clr-blue);
+	--top-bar-height: 61px;
+	--panels-gap: 1.2rem;
+
+	--svg-recolour-white: invert(100%) sepia(89%) saturate(1%) hue-rotate(218deg) brightness(113%) contrast(96%);
+	--svg-recolour-green: invert(57%) sepia(85%) saturate(352%) hue-rotate(45deg) brightness(98%) contrast(93%);
+	--svg-recolour-yellow: invert(87%) sepia(83%) saturate(521%) hue-rotate(332deg) brightness(91%) contrast(98%);
+	--svg-recolour-orange: invert(81%) sepia(56%) saturate(3874%) hue-rotate(339deg) brightness(96%) contrast(86%);
+	--svg-recolour-red: invert(48%) sepia(84%) saturate(3805%) hue-rotate(341deg) brightness(96%) contrast(88%);
+	--svg-recolour-blue: invert(44%) sepia(26%) saturate(3426%) hue-rotate(193deg) brightness(99%) contrast(87%);
+	--svg-recolour-grey: invert(44%) sepia(26%) saturate(3426%) hue-rotate(193deg) brightness(122%) contrast(87%);
+
+	--icon-checkbox-tick-medium: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.3333 4.33333L5.99996 11.6667L2.66663 8.33333' stroke='%230c1014' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+	--icon-checkbox-dash-medium: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 8H3' stroke='%230c1014' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}

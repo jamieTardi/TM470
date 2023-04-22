@@ -1,0 +1,48 @@
+.select {
+	padding: 0.5rem 0;
+	select {
+		appearance: none;
+		background-color: transparent;
+		color: var(--clr-grey-300);
+		border: none;
+		padding: 0 1em 0 0;
+		margin: 0;
+		width: 100%;
+		font-family: inherit;
+		font-size: inherit;
+		cursor: inherit;
+		line-height: inherit;
+		z-index: 1;
+		outline: none;
+	}
+
+	&__selection {
+		display: grid;
+		grid-template-areas: "select";
+		align-items: center;
+		position: relative;
+		cursor: pointer;
+		select,
+		&::after {
+			grid-area: select;
+			cursor: pointer;
+		}
+		min-width: 50%;
+		border: none;
+		border-radius: 0.25em;
+		padding: 0.25em 0.5em;
+		font-size: 1.25rem;
+		cursor: pointer;
+		line-height: 1.1;
+		background-color: #fff;
+		background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+		&:after {
+			content: "";
+			justify-self: end;
+			width: 0.8em;
+			height: 0.5em;
+			background-color: var(--clr-grey-300);
+			clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+		}
+	}
+}

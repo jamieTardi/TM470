@@ -1,0 +1,48 @@
+.bookingData {
+	padding: 0;
+	position: relative;
+	width: 100%;
+
+	&__calendar {
+		margin-top: 2rem;
+
+		[class*="react-calendar__navigation__arrow"] {
+			display: none;
+		}
+		[class*="react-calendar__navigation__label"] {
+			pointer-events: none;
+		}
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1rem;
+	}
+
+	&.open {
+		padding-top: 20rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1rem;
+	}
+
+	&.noBookings {
+		display: none;
+	}
+
+	@media (max-width: 900px) {
+		&__cards {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&.open {
+			display: flex;
+			flex-direction: column;
+		}
+		&.noBookings {
+			display: none;
+		}
+	}
+}

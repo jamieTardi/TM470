@@ -1,0 +1,23 @@
+.customerCard {
+	h3 {
+		color: var(--clr-white);
+	}
+	button {
+		background-color: inherit;
+		border: none;
+	}
+	&__header {
+		background-color: var(--clr-blue);
+		display: flex;
+		justify-content: space-between;
+	}
+	&__body {
+		display: grid;
+		grid-template-areas: "email phone" "notes notes";
+		grid-template-columns: 1fr;
+		gap: 0.5rem;
+		div {
+			font-size: var(--font-size-s);
+		}
+	}
+}

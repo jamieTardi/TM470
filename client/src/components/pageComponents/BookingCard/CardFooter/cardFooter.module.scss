@@ -1,0 +1,14 @@
+.cardFooter {
+	border-top: 1px solid var(--clr-grey-300);
+	padding: 1rem 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	&__toast {
+		border: 1px solid var(--clr-grey-200);
+		margin-bottom: 1rem;
+		width: 100%;
+	}
+}

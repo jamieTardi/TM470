@@ -1,0 +1,23 @@
+.weather {
+
+	h2 {
+		color: var(--clr-black);
+	}
+	span {
+		font-weight: 600;
+		color: var(--clr-black);
+
+	}
+	&__conditions {
+		display: grid;
+		grid-template-areas: 'condition image';
+		row-gap: 1rem;
+		&__condition {
+			align-self: center;
+		}
+		img {
+			width: 100px;
+			height: 100px;
+		}
+	}
+}

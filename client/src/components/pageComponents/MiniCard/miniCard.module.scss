@@ -1,0 +1,27 @@
+.miniCard {
+	background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+	padding: 1rem;
+	position: relative;
+
+	div {
+		color: var(--clr-white);
+		font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+		text-shadow: 2px 2px var(--clr-grey-300);
+		font-size: var(--font-size-m);
+		&:nth-child(2) {
+			font-size: calc(2 * var(--font-size-l));
+		}
+		&:last-child {
+			font-size: var(--font-size-s);
+		}
+	}
+	span {
+		position: absolute;
+		opacity: 0.2;
+		color: var(--clr-white);
+		font-size: calc(4 * var(--font-size-l));
+		top: 10px;
+		font-weight: 700;
+		right: 20px;
+	}
+}

@@ -1,0 +1,33 @@
+.lakes {
+	&__cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		place-items: start;
+		gap: 1rem;
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+
+
+		@media (max-width: 900px) {
+			flex-direction: column;
+			align-content: center;
+			& > div {
+				width: min-content;
+				align-self: flex-end;
+				margin: 1rem 0;
+			}
+		}
+
+	}
+
+	@media (max-width: 900px) {
+		&__cards {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
+	}
+}

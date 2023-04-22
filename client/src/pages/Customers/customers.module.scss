@@ -1,0 +1,36 @@
+.customers {
+	&__top {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__interactive {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		place-items: start;
+		gap: 1rem;
+	}
+
+	&__search {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column-reverse;
+		gap: 1rem;
+		width: 100%;
+	}
+
+	@media (max-width: 900px) {
+		&__cards {
+			display: block;
+		}
+	}
+}

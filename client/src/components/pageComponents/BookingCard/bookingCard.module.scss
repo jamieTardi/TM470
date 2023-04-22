@@ -1,0 +1,83 @@
+.card {
+	min-height: 230px;
+	width: 100%;
+	transition: height 1s;
+
+	.noPay {
+		background-color: var(--clr-red);
+	}
+	.individual {
+		background-color: var(--clr-yellow);
+	}
+	.topContainer {
+		display: flex;
+		flex-direction: column;
+	}
+	.top {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&__inputs,
+		.inner_top {
+			display: grid;
+			width: 100%;
+			grid-template-columns: 1fr 1fr;
+
+			.inner_content {
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 1rem;
+			}
+			a {
+				display: flex;
+				gap: 0.3rem;
+			}
+		}
+		.notes {
+			margin: 1rem 0;
+			padding: 1rem;
+			border: 1px solid var(--clr-grey-300);
+			border-radius: 5px;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+	}
+
+	&__cardHeader {
+		background-color: var(--clr-green);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		h3 {
+			color: var(--clr-white);
+		}
+	}
+	&__content {
+		span,
+		p {
+			font-size: var(--font-size-s);
+		}
+		&--pills {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid var(--clr-grey-300);
+		}
+		&--top h4 {
+			text-align: center;
+		}
+
+		.customerId {
+			margin: 1rem 0;
+		}
+	}
+	&__footer {
+		margin-top: 1rem;
+	}
+	.innerContentComponent {
+		width: 100%;
+	}
+}

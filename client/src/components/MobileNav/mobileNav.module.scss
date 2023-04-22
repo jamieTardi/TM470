@@ -1,0 +1,26 @@
+.mobileNav {
+	position: absolute;
+	z-index: 200;
+	background-color: var(--clr-blue);
+	left: 30px;
+	bottom: 60px;
+	padding: 1rem;
+	border-radius: 50px;
+	cursor: pointer;
+	border: none;
+}
+
+.mobileDrawer {
+	background-color: var(--clr-blue);
+
+	&__header {
+		color: var(--clr-white);
+		font-size: var(--font-size-xl);
+		border-bottom: 1px solid var(--clr-white) !important;
+
+		button {
+			color: var(--clr-white);
+			margin-bottom: 0.5rem;
+		}
+	}
+}

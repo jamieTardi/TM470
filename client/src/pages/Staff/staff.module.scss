@@ -1,0 +1,11 @@
+.staff {
+	position: relative;
+	&__add {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	h1 {
+		text-align: center;
+	}
+}

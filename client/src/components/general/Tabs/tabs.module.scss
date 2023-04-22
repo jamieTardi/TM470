@@ -1,0 +1,15 @@
+.tabs {
+	display: flex;
+	list-style: none;
+	border: 2px solid var(--clr-blue);
+	width: max-content;
+	border-radius: 25px;
+	background-color: var(--clr-blue-lightest);
+	margin: auto;
+
+	@media (max-width: 900px) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}

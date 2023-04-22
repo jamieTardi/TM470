@@ -1,0 +1,74 @@
+.staffCard {
+	margin: 10px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	width: 300px;
+
+	&__card-img {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+	}
+
+	&__card-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 20px;
+		min-height: 250px;
+		position: relative;
+		h4 {
+			margin: 0.75rem 0;
+		}
+		p {
+			font-size: 13px;
+			margin: 0 0 40px;
+		}
+	}
+	&__details {
+		display: flex;
+		height: 40px;
+		p {
+			display: flex;
+			flex-direction: column;
+		}
+		img {
+			border-radius: 20%;
+			width: 30px;
+			height: 30px;
+			margin-right: 10px;
+		}
+	}
+
+	&__card-title-container {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		align-items: center;
+		border-bottom: 1px solid var(--clr-grey-300);
+		margin-bottom: 0.5rem;
+		button {
+			background-color: inherit;
+			border: none;
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
+		}
+	}
+	&__user {
+		display: flex;
+		margin-top: auto;
+		img {
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+			margin-right: 10px;
+		}
+	}
+	&__user-info {
+		margin: 0;
+	}
+}
