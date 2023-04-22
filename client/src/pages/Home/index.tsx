@@ -1,16 +1,16 @@
-import React, { useEffect } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
-import { Landing, Login, Dashboard, Staff } from "../index";
-import { AnimatePresence } from "framer-motion";
-import { ProtectedRoute } from "../../components/routes/protected";
-import Lakes from "../Lakes";
-import { fetchAuth } from "../../Redux/slices/authSlice";
-import { useAppDispatch } from "../../Redux/store";
+import React, { useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import { Login, Dashboard, Staff } from '../index';
+import { AnimatePresence } from 'framer-motion';
+import { ProtectedRoute } from '../../components/routes/protected';
+import Lakes from '../Lakes';
+import { fetchAuth } from '../../Redux/slices/authSlice';
+import { useAppDispatch } from '../../Redux/store';
 
-import Logout from "../Logout";
-import Customers from "../Customers";
-import Bookings from "../Bookings";
-import AvailabilityOverview from "../AvailabilityOverview";
+import Logout from '../Logout';
+import Customers from '../Customers';
+import Bookings from '../Bookings';
+import AvailabilityOverview from '../AvailabilityOverview';
 
 const Home = () => {
 	const dispatch = useAppDispatch();
@@ -21,15 +21,15 @@ const Home = () => {
 
 	return (
 		<>
-			<AnimatePresence mode="wait">
+			<AnimatePresence mode='wait'>
 				<Routes location={location} key={location.pathname}>
-					<Route path="/" element={<Landing />} />
-					<Route path="/login" element={<Login />} />
+					<Route path='/' element={<Login />} />
+					<Route path='/login' element={<Login />} />
 
-					<Route path="/logout" element={<Logout />} />
+					<Route path='/logout' element={<Logout />} />
 
 					<Route
-						path={"/dashboard"}
+						path={'/dashboard'}
 						element={
 							<ProtectedRoute>
 								<Dashboard />
@@ -37,7 +37,7 @@ const Home = () => {
 						}
 					/>
 					<Route
-						path={"/lakes"}
+						path={'/lakes'}
 						element={
 							<ProtectedRoute>
 								<Lakes />
@@ -45,7 +45,7 @@ const Home = () => {
 						}
 					/>
 					<Route
-						path={"/customers"}
+						path={'/customers'}
 						element={
 							<ProtectedRoute>
 								<Customers />
@@ -54,7 +54,7 @@ const Home = () => {
 					/>
 
 					<Route
-						path={"/bookings"}
+						path={'/bookings'}
 						element={
 							<ProtectedRoute>
 								<Bookings />
@@ -62,7 +62,7 @@ const Home = () => {
 						}
 					/>
 					<Route
-						path={"/staff"}
+						path={'/staff'}
 						element={
 							<ProtectedRoute>
 								<Staff />
@@ -70,7 +70,7 @@ const Home = () => {
 						}
 					/>
 					<Route
-						path={"/overview"}
+						path={'/overview'}
 						element={
 							<ProtectedRoute>
 								<AvailabilityOverview />
