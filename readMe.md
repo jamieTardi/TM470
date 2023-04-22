@@ -29,13 +29,13 @@ To allow for higher security API keys and connection strings are only stored loc
 3. Inside the .env file create two env variables with these exact names: REACT_APP_WEATHER_KEY=[INSERT YOUR KEY HERE!] and REACT_APP_MAPBOX_KEY=[INSERT YOUR KEY HERE!].
 4. Replace the [INSERT YOUR KEY HERE!] with your api key (these are free to use apis). Save the file.
 
-   ### Server Env Variables
+### Server Env Variables
 
-5. Change to the server directory
-6. Create the .env file the same way
-7. Add the env variables TOKEN_SECRET=[INSERT YOUR API KEY] MONGO_URI=[INSERT YOUR API KEY]
-8. These are very important or the backend application will not run correctly and you will not be able to access the application.
-9. The mongo noSQL database string can be accessed free at https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-gb_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624581&adgroup=115749705343&cq_cmp=12212624581&gad=1&gclid=Cj0KCQjwi46iBhDyARIsAE3nVrZWNJm_ltmKoYPSWbGReO_TK-Vn2VpitnwFNnO7eqRekTwLL-8KnDoaAqGHEALw_wcB you will need to make a account. 10. The token is a randomly generated hash and is used in the middle ware, this can be done using any random hash string generator but is required for the auth flow.
+1. Change to the server directory
+2. Create the .env file the same way
+3. Add the env variables TOKEN_SECRET=[INSERT YOUR API KEY] MONGO_URI=[INSERT YOUR API KEY]
+4. These are very important or the backend application will not run correctly and you will not be able to access the application.
+5. The mongo noSQL database string can be accessed free at https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-gb_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624581&adgroup=115749705343&cq_cmp=12212624581&gad=1&gclid=Cj0KCQjwi46iBhDyARIsAE3nVrZWNJm_ltmKoYPSWbGReO_TK-Vn2VpitnwFNnO7eqRekTwLL-8KnDoaAqGHEALw_wcB you will need to make a account. 10. The token is a randomly generated hash and is used in the middle ware, this can be done using any random hash string generator but is required for the auth flow.
 
 ## Client Dependencies
 
