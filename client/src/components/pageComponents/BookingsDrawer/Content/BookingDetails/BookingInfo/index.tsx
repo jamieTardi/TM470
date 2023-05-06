@@ -33,9 +33,6 @@ const BookingInfo = ({
 		: 'green';
 
 	const updateBooking = useCallback(() => {
-		if (!booking.arrival || !booking.departure) {
-			return;
-		}
 		setBooking({
 			...booking,
 			arrival: new Date(dateRange[0].setHours(dateRange[0].getHours() + 6)),

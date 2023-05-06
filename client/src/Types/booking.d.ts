@@ -1,4 +1,4 @@
-import { ICustomer } from "./customer";
+import { ICustomer } from './customer';
 
 export interface IBooking {
 	bookingDetails: TBooking;
@@ -8,8 +8,8 @@ export interface IBooking {
 
 type TBooking = {
 	_id?: string;
-	arrival: Date | null;
-	departure: Date | null;
+	arrival: Date;
+	departure: Date;
 	cost: number;
 	paid: number;
 	placesBooked: number;
