@@ -39,7 +39,7 @@ const BookingsDrawer = () => {
 		!booking.lakeId ||
 		!booking.cost ||
 		!booking.placesBooked;
-	console.log({ booking });
+
 	const handleClearParams = useCallback(() => {
 		searchParams.delete('bookingId');
 		setSearchParams(searchParams);
